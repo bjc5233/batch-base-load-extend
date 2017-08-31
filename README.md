@@ -1,11 +1,17 @@
-# batch-base-loadE
+# batch-base-loadExtend
 
 
 ## 说明
-batch编程中，经常会调用一些第三方exe程序，loadE.bat用于管理\调用这些exe程序。
-* 配置exe程序仓库[loadE.bat中base变量]
-* 声明方式[load.bat aexe bexe ...]
-* 调用方式[%aexe% param1 param2 ...]
+batch基础编程中，经常会调用一些第三方程序，loadExtend用于管理\调用这些第三方程序。
+### 分类
+* loadE.bat管理第三方exe程序
+* loadF.bat管理不能写入load.bat的函数[很少使用]
+* loadJ.bat管理Java jar文件[当没有对应可用的exe程序，自己动手写Java程序实现]
+
+
+### 调用
+* 配置程序仓库[loadE.bat\loadF.bat\loadJ.bat中base变量]
+* 声明调用方式查看demo.bat
 * 以下是最简单的实例：
 ```batch
 @echo off
@@ -16,5 +22,9 @@ call loadE.bat CurS
 echo demo
 pause>nul
 ```
-## 其他
-其他batch项目中基本都会使用到loadE.bat，此项目中的loadE.bat保持最新
+### 其他
+其他batch项目中很多使用到loadExtend，此项目中的loadExtend保持最新
+
+
+## 预览
+<div align=center><img src="https://github.com/bjc5233/batch-base-loadExtend/raw/master/resources/demo.png"/></div>
