@@ -23,7 +23,7 @@
 ::      _param-1=d:\out.jpg
 ::      _param_num=6
 set _param_num=0& set _param_no_key_index=0
-:_paramLoop
+:_param_loop
 set _param=%~1
 if "%_param%"=="" set _param_no_key_index=& set _param_flag=& set _param_p1=& set _param_p2=& set _param_is_key=& goto :EOF
 set _param_p1=%_param:~0,1%& set _param_p2=%_param:~1%& set _param_is_key=false
@@ -40,4 +40,4 @@ if %_param_is_key%==true (
 		set _param-%_param_no_key_index%=%_param%& set /a _param_no_key_index+=1, _param_num+=1
 	)
 )
-shift& goto :_paramLoop
+shift& goto :_param_loop
