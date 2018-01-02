@@ -1,4 +1,4 @@
-# batch-base-loadExtend
+# batch-base-load-extend
 
 
 ## 说明
@@ -32,7 +32,7 @@ batch基础编程中，经常会调用一些第三方程序，loadExtend用于�
 
 ## 调用
 * 配置程序仓库[loadE.bat\loadF.bat\loadJ.bat中base变量]
-* 声明调用方式查看demo.bat
+* 声明\调用方式查看demo.bat文件
 * 以下是最简单的实例：
 ```batch
 @echo off
@@ -50,4 +50,4 @@ pause>nul
 
 
 ## 预览
-<div align=center><img src="https://github.com/bjc5233/batch-base-loadExtend/raw/master/resources/demo.png"/></div>
+<div align=center><img src="https://github.com/bjc5233/batch-base-load-extend/raw/master/resources/demo.png"/></div>
