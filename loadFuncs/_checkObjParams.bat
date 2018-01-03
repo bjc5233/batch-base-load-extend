@@ -25,5 +25,6 @@ set errorMsg="objMethod[%objMethod%]: param%paramCount% NOT DEFINED"
 (if %paramCount% GEQ 9 if "%~9"=="" call :errorMsg %errorMsg%)
 goto :EOF
 
+
 :errorMsg
 echo errorMsg:& echo     %~1& pause>nul& exit
