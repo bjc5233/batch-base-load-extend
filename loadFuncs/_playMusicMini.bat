@@ -16,4 +16,4 @@ if "%2"=="" (
     if "%2"=="0" (set times=) else (set times=1,1,%2)
 )
 for /l %%i in (%times%) do %gplay% "%~1">nul 2>nul
-goto :EOF
+exit
